@@ -8,6 +8,10 @@
 
 # build
 /build*
+/app/build*
 /twister-out*
 
 __pycache__/
+
+# clangd
+.cache

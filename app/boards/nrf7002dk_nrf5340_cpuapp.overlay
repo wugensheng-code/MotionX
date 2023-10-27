@@ -1,0 +1,14 @@
+/*
+ * Copyright (c) 2022 Nordic Semiconductor
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+&arduino_i2c {
+	status = "okay";
+	mpu6050@68 {
+		compatible = "invensense,mpu6050";
+		reg = <0x68>;
+		status = "okay";
+		int-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+	};
+};
